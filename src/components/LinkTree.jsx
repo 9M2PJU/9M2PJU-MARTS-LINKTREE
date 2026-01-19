@@ -39,6 +39,9 @@ const LinkTree = () => {
                     <p className="text-blue-100/80 font-medium max-w-sm mx-auto leading-relaxed">
                         {profile.description}
                     </p>
+                    <p className="text-marts-yellow font-semibold tracking-wide text-sm">
+                        {profile.tagline}
+                    </p>
                 </div>
 
                 {/* Social Icons Row */}
@@ -66,8 +69,12 @@ const LinkTree = () => {
             </div>
 
             {/* Footer */}
-            <footer className="text-center text-white/30 text-sm py-4">
-                <p>© {new Date().getFullYear()} MARTS. All rights reserved.</p>
+            <footer className="text-center text-white/50 text-sm py-6">
+                <p className="flex items-center justify-center gap-2">
+                    Made for
+                    <img src="/marts-logo.png" alt="MARTS" className="w-5 h-5 inline-block" />
+                    by <a href="https://hamradio.my" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">9M2PJU</a>
+                </p>
             </footer>
         </div>
     );

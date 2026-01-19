@@ -16,9 +16,9 @@ import {
 
 export const profile = {
     name: "MARTS",
-    description: "National Amateur Radio Society of Malaysia | Connect • Communicate • Serve",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/89/MARTS_Logo.png", // Using a placeholder/real logo if available, or I will use a generated one or text.
-    // Ideally we should have the real logo. For now I'll check if I can find one or just use text/icon.
+    description: "National Amateur Radio Society of Malaysia",
+    tagline: "Connect • Communicate • Serve",
+    image: "/marts-logo.png",
 };
 
 export const socials = [
