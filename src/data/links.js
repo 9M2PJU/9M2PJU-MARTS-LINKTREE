@@ -138,7 +138,7 @@ export const links = [
         title: "Malaysia Band Plan (2017)",
         url: "https://www.mcmc.gov.my/skmmgovmy/media/General/pdf/Spectrum-Plan-2017i.pdf",
         icon: FileText
-    }
+    },
     {
         title: "MARTS Official TikTok",
         url: "https://www.tiktok.com/@marts.malaysia.25?_t=zs-8xdd9ptzdh0&_r=1",
