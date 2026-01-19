@@ -9,16 +9,18 @@ import {
     BookOpen,
     FileText,
     Users,
-    Search,
     Video,
     Database
 } from 'lucide-react';
+import martsLogo from '../assets/marts-logo.png';
+
+// import videoIcon ... (not used, removing clutter)
 
 export const profile = {
     name: "MARTS",
     description: "National Amateur Radio Society of Malaysia",
     tagline: "Connect • Communicate • Serve",
-    image: "/marts-logo.png",
+    image: martsLogo,
 };
 
 export const socials = [
