@@ -33,7 +33,7 @@ const LinkTree = () => {
                 </div>
 
                 <div className="space-y-2">
-                    <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-200 via-white to-blue-200 tracking-tight">
+                    <h1 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-100 via-white to-blue-100 tracking-tight pb-1">
                         {profile.name}
                     </h1>
                     <p className="text-blue-100/80 font-medium max-w-sm mx-auto leading-relaxed">
