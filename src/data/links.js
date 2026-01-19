@@ -139,5 +139,15 @@ export const links = [
         url: "https://www.mcmc.gov.my/skmmgovmy/media/General/pdf/Spectrum-Plan-2017i.pdf",
         icon: FileText
     },
+    {
+        title: "MARTS Official TikTok",
+        url: "https://www.tiktok.com/@marts.malaysia.25?_t=zs-8xdd9ptzdh0&_r=1",
+        icon: Globe // Auto-added by sync script
+    },
+    {
+        title: "MCMC Question Pools (Marked)",
+        url: "https://drive.google.com/drive/folders/14aLQ2x62O9yAfs388hNPMSu0ZptQ-qMA?usp=sharing",
+        icon: Globe // Auto-added by sync script
+    },
 ];
 
