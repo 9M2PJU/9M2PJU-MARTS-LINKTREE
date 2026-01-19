@@ -2,7 +2,7 @@
   <img src="public/marts-logo.png" alt="MARTS Logo" width="120" />
 </p>
 
-<h1 align="center">MARTS Linktree</h1>
+<h1 align="center">MARTS Directory</h1>
 
 <p align="center">
   <strong>A Modern Link-in-Bio Page for the Malaysian Amateur Radio Transmitters Society</strong>
@@ -18,6 +18,7 @@
   <img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/PWA-Ready-5A0FC8?style=flat-square&logo=pwa&logoColor=white" alt="PWA" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License" />
 </p>
 
@@ -25,10 +26,13 @@
 
 ## ✨ Features
 
+- **📲 Progressive Web App (PWA)** — Installable on mobile and desktop devices
+- **🤖 Auto-Sync Links** — Daily GitHub Action syncs new links from the official Linktree
 - **🎨 Glassmorphism Design** — Modern frosted-glass aesthetic with smooth blur effects
 - **🌈 Brand Colors** — Official MARTS blue (#1B365D) and gold (#FFD700) color scheme
 - **⚡ Lightning Fast** — Built with Vite for instant page loads
-- **📱 Fully Responsive** — Looks great on all devices
+- **📱 Fully Responsive** — Optimized typography for all screen sizes
+- **⬆️ Back to Top** — Floating button for easy navigation
 - **🎭 Micro-interactions** — Hover animations and smooth transitions
 - **🌙 Dark Mode** — Easy on the eyes with a deep space-themed background
 
@@ -83,20 +87,46 @@ npm run preview
 ## 🏗️ Project Structure
 
 ```
+├── .github/
+│   └── workflows/
+│       └── sync-links.yml   # Daily link sync automation
 ├── public/
-│   ├── CNAME              # Custom domain configuration
-│   └── marts-logo.png     # Brand logo
+│   ├── CNAME                # Custom domain configuration
+│   ├── .nojekyll            # Disable Jekyll processing
+│   └── marts-logo.png       # Brand logo (PWA icon)
+├── scripts/
+│   └── sync-links.js        # Linktree scraper script
 ├── src/
+│   ├── assets/
+│   │   └── marts-logo.png   # Logo for React imports
 │   ├── components/
-│   │   ├── LinkTree.jsx   # Main container component
-│   │   └── LinkButton.jsx # Individual link button
+│   │   ├── LinkTree.jsx     # Main container component
+│   │   ├── LinkButton.jsx   # Individual link button
+│   │   ├── BackToTop.jsx    # Floating scroll-to-top button
+│   │   └── PWAInstallPrompt.jsx # Install app popup
 │   ├── data/
-│   │   └── links.js       # Centralized link data
-│   ├── App.jsx            # App entry with background effects
-│   └── index.css          # Global styles & Tailwind
-├── docs/                   # Production build output
-└── vite.config.js         # Vite configuration
+│   │   └── links.js         # Centralized link data
+│   ├── App.jsx              # App entry with background effects
+│   └── index.css            # Global styles & Tailwind
+├── docs/                     # Production build output
+└── vite.config.js           # Vite + PWA configuration
 ```
+
+---
+
+## 🤖 Automated Link Sync
+
+This project includes a GitHub Action that automatically syncs new links from the official [MARTS Linktree](https://linktr.ee/marts.my).
+
+**How it works:**
+1. ⏰ Runs daily at midnight UTC (or on manual trigger)
+2. 🔍 Scrapes the official Linktree page
+3. 🆕 Detects any new links not already in the app
+4. ✅ Commits and pushes updates automatically
+
+> **Note:** Existing links are never overwritten. Only new links are appended.
+
+To run manually: Go to **Actions** → **Sync Linktree Links** → **Run workflow**
 
 ---
 
@@ -127,6 +157,22 @@ colors: {
   }
 }
 ```
+
+---
+
+## 📲 PWA Installation
+
+The site is installable as a Progressive Web App:
+
+**On Mobile (Android/iOS):**
+1. Open [marts.hamradio.my](https://marts.hamradio.my) in Chrome/Safari
+2. Tap the menu (⋮ or Share icon)
+3. Select "Install App" or "Add to Home Screen"
+
+**On Desktop:**
+1. Open the site in Chrome/Edge
+2. Click the install icon in the address bar
+3. Or use the menu → "Install MARTS Directory"
 
 ---
 
