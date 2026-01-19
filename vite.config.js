@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     plugins: [react()],
     base: '/9M2PJU-MARTS-LINKTREE/',
+    build: {
+        outDir: 'docs',
+    },
 })
