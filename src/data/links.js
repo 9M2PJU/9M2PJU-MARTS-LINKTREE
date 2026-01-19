@@ -9,6 +9,7 @@ import {
     BookOpen,
     FileText,
     Users,
+    Search,
     Video,
     Database
 } from 'lucide-react';
