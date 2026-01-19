@@ -147,7 +147,7 @@ export const links = [
     {
         title: "MCMC Question Pools (Marked)",
         url: "https://drive.google.com/drive/folders/14aLQ2x62O9yAfs388hNPMSu0ZptQ-qMA?usp=sharing",
-        icon: Globe // Auto-added by sync script
+        icon: FileText
     },
 ];
 
