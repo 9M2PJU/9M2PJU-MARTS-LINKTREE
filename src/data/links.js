@@ -47,6 +47,11 @@ export const links = [
         icon: Globe
     },
     {
+        title: "MARTS Membership Portal",
+        url: "https://ahli.marts.org.my/",
+        icon: Users
+    },
+    {
         title: "MARTS Membership Renewal",
         url: "https://renew.marts.org.my",
         icon: Users
@@ -120,6 +125,11 @@ export const links = [
         title: "MCMC eSPECTRA Guide",
         url: "https://drive.google.com/drive/folders/1lBHoKa_K2PNBN9yT6az0khHCzmNgq4C9?usp=drive_link",
         icon: FileText
+    },
+    {
+        title: "General Spectrum FAQ",
+        url: "https://mcmc.gov.my/en/spectrum/faq/spectrum-use/general",
+        icon: BookOpen
     },
     {
         title: "Malaysia Band Plan (2017)",
