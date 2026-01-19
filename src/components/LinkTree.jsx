@@ -72,7 +72,7 @@ const LinkTree = () => {
             <footer className="text-center text-white/50 text-sm py-6">
                 <p className="flex items-center justify-center gap-2">
                     Made for
-                    <img src="/marts-logo.png" alt="MARTS" className="w-5 h-5 inline-block" />
+                    <img src="./marts-logo.png" alt="MARTS" className="w-5 h-5 inline-block" />
                     by <a href="https://hamradio.my" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">9M2PJU</a>
                 </p>
             </footer>
