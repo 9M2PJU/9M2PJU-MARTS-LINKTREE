@@ -18,7 +18,7 @@ import martsLogo from '../assets/marts-logo.png';
 // import videoIcon ... (not used, removing clutter)
 
 export const profile = {
-    name: "MARTS",
+    name: "MARTS Directory",
     description: "National Amateur Radio Society of Malaysia",
     tagline: "Connect • Communicate • Serve",
     image: martsLogo,
