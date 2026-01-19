@@ -26,13 +26,16 @@ async function syncLinks() {
             const title = $(el).text().trim();
 
             // Basic filtering to ensure it's a valid link and not internal Linktree nav
-            if (url && url.startsWith('http') && title && !url.includes('linktr.ee/admin')) {
-                // Remove Linktree trust/report links
-                if (url.includes('linktr.ee/s/about') || url.includes('linktr.ee/privacy') || url.includes('linktr.ee/login')) return;
+            if (url && url.startsWith('http') && title) {
+                // Exclude all linktr.ee links (they're spam recommendations from "Explore other Linktrees")
+                if (url.includes('linktr.ee/')) {
+                    return;
+                }
 
                 scrapedLinks.push({ title, url });
             }
         });
+
 
         console.log(`Found ${scrapedLinks.length} links on remote.`);
 
