@@ -27,8 +27,28 @@ async function syncLinks() {
 
             // Basic filtering to ensure it's a valid link and not internal Linktree nav
             if (url && url.startsWith('http') && title) {
-                // Exclude all linktr.ee links (they're spam recommendations from "Explore other Linktrees")
-                if (url.includes('linktr.ee/')) {
+                const lowerTitle = title.toLowerCase();
+                const lowerUrl = url.toLowerCase();
+
+                // Exclude all linktr.ee links (spam recommendations, internal pages)
+                if (lowerUrl.includes('linktr.ee/')) {
+                    return;
+                }
+
+                // Exclude generic UI buttons or spammy titles
+                const titleBlocklist = [
+                    'subscribe',
+                    'privacy',
+                    'cookie',
+                    'report',
+                    'login',
+                    'sign up',
+                    'explore',
+                    'shop',
+                    'contact'
+                ];
+
+                if (titleBlocklist.some(blocked => lowerTitle.includes(blocked))) {
                     return;
                 }
 
