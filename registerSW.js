@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/9M2PJU-MARTS-LINKTREE/sw.js', { scope: '/9M2PJU-MARTS-LINKTREE/' })})}
