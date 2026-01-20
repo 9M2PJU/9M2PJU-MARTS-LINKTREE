@@ -149,5 +149,10 @@ export const links = [
         url: "https://drive.google.com/drive/folders/14aLQ2x62O9yAfs388hNPMSu0ZptQ-qMA?usp=sharing",
         icon: FileText
     },
+    {
+        title: "MARTS Membership Directory",
+        url: "https://marts-members.hamradio.my",
+        icon: Globe // Auto-added by sync script
+    },
 ];
 
