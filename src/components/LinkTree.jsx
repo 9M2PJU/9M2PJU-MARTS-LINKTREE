@@ -24,6 +24,10 @@ const LinkTree = () => {
                         <img
                             src={profile.image}
                             alt={profile.name}
+                            width="144"
+                            height="144"
+                            loading="eager"
+                            fetchpriority="high"
                             className="w-full h-full object-contain transform transition-transform duration-700 group-hover:scale-110 drop-shadow-lg"
                             onError={(e) => {
                                 e.target.onerror = null;
@@ -74,7 +78,7 @@ const LinkTree = () => {
             <footer className="text-center text-white/50 text-sm py-6">
                 <p className="flex items-center justify-center gap-2">
                     Made for
-                    <img src={martsLogo} alt="MARTS" className="w-5 h-5 inline-block" />
+                    <img src={martsLogo} alt="MARTS" width="20" height="20" loading="lazy" className="w-5 h-5 inline-block" />
                     by <a href="https://hamradio.my" target="_blank" rel="noopener noreferrer" className="hover:text-blue-300 transition-colors">9M2PJU</a>
                 </p>
             </footer>

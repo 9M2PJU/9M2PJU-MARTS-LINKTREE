@@ -13,7 +13,7 @@ const LinkButton = ({ link, index }) => {
                  bg-white/5 backdrop-blur-md border border-white/10 rounded-xl
                  transition-all duration-300 hover:scale-[1.02] hover:bg-marts-blue/20 hover:border-marts-yellow/50
                  hover:shadow-[0_0_20px_rgba(255,215,0,0.1)]
-                 overflow-hidden"
+                 overflow-hidden will-change-transform backface-hidden"
             style={{ animationDelay: `${index * 100}ms` }}
         >
             {/* Glossy sheen effect */}
